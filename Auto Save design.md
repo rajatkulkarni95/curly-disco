@@ -4,7 +4,7 @@ I created a debounce hook (that I wrote about here <https://www.codemzy.com/blo
 
 To start with I keep a track of changes in the editor...
 
-```
+```javascript
 // debounce function to set changes to reduce calls to getJSON
 const debounceChanges = useDebounce(function(editor) {
   toSave.current = editor.getJSON();
@@ -21,7 +21,7 @@ const debounceChanges = useDebounce(function(editor) {
 
 Then save after a user pauses for more than 7 seconds, this is how I use the `useDebounce` hook to do that...
 
-```
+```plaintext
 // debounce save after no activity in editor
 const debounceSave = useDebounce(function() {
   handleSave();
@@ -30,7 +30,7 @@ const debounceSave = useDebounce(function() {
 
 And if they don't take a pause, (e.g. they are continuously typing for more than a minute), I'll also autosave with the `useAutosave` hook...
 
-```
+```plaintext
 useAutosave(() => {
   // run save if changes and not already saving
   if (isChanges && !isSaving) {

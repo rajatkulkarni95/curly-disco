@@ -1,4 +1,4 @@
-# Making your own plugins
+# `Making your own plugins
 
 > **Warning**
 >
@@ -10,7 +10,7 @@ Quartz’s plugins are a series of transformations over content. This is illustr
 
 All plugins are defined as a function that takes in a single parameter for options `type OptionType = object | undefined` and return an object that corresponds to the type of plugin it is.
 
-```
+```plaintext
 type OptionType = object | undefinedtype QuartzPlugin<Options extends OptionType = undefined> = (opts?: Options) => QuartzPluginInstancetype QuartzPluginInstance =  | QuartzTransformerPluginInstance  | QuartzFilterPluginInstance  | QuartzEmitterPluginInstance
 ```
 
@@ -28,7 +28,7 @@ The following sections will go into detail for what methods can be implemented f
 
 Transformers **map** over content, taking a Markdown file and outputting modified content or adding metadata to the file itself.
 
-```
+```plaintext
 export type QuartzTransformerPluginInstance = {  name: string  textTransform?: (ctx: BuildCtx, src: string | Buffer) => string | Buffer  markdownPlugins?: (ctx: BuildCtx) => PluggableList  htmlPlugins?: (ctx: BuildCtx) => PluggableList  externalResources?: (ctx: BuildCtx) => Partial<StaticResources>}
 ```
 
@@ -45,19 +45,19 @@ A good example of a transformer plugin that borrows from the `remark` and `rehyp
 
 quartz/plugins/transformers/latex.ts
 
-```
+```plaintext
 import remarkMath from "remark-math"import rehypeKatex from "rehype-katex"import rehypeMathjax from "rehype-mathjax/svg"import { QuartzTransformerPlugin } from "../types" interface Options {  renderEngine: "katex" | "mathjax"} export const Latex: QuartzTransformerPlugin<Options> = (opts?: Options) => {  const engine = opts?.renderEngine ?? "katex"  return {    name: "Latex",    markdownPlugins() {      return [remarkMath]    },    htmlPlugins() {      if (engine === "katex") {        // if you need to pass options into a plugin, you        // can use a tuple of [plugin, options]        return [[rehypeKatex, { output: "html" }]]      } else {        return [rehypeMathjax]      }    },    externalResources() {      if (engine === "katex") {        return {          css: [            // base css            "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css",          ],          js: [            {              // fix copy behaviour: https://github.com/KaTeX/KaTeX/blob/main/contrib/copy-tex/README.md              src: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js",              loadTime: "afterDOMReady",              contentType: "external",            },          ],        }      } else {        return {}      }    },  }}
 ```
 
 Another common thing that transformer plugins will do is parse a file and add extra data for that file:
 
-```
+```plaintext
 export const AddWordCount: QuartzTransformerPlugin = () => {  return {    name: "AddWordCount",    markdownPlugins() {      return [        () => {          return (tree, file) => {            // tree is an `mdast` root element            // file is a `vfile`            const text = file.value            const words = text.split(" ").length            file.data.wordcount = words          }        },      ]    },  }} // tell typescript about our custom data fields we are adding// other plugins will then also be aware of this data fielddeclare module "vfile" {  interface DataMap {    wordcount: number  }}
 ```
 
 Finally, you can also perform transformations over Markdown or HTML ASTs using the `visit` function from the `unist-util-visit` package or the `findAndReplace` function from the `mdast-util-find-and-replace`package.
 
-```
+```plaintext
 export const TextTransforms: QuartzTransformerPlugin = () => {  return {    name: "TextTransforms",    markdownPlugins() {      return [() => {        return (tree, file) => {          // replace _text_ with the italics version          findAndReplace(tree, /_(.+)_/, (_value: string, ...capture: string[]) => {            // inner is the text inside of the () of the regex            const [inner] = capture            // return an mdast node            // https://github.com/syntax-tree/mdast            return {              type: "emphasis",              children: [{ type: 'text', value: inner }]            }          })          // remove all links (replace with just the link content)         // match by 'type' field on an mdast node         // https://github.com/syntax-tree/mdast#link in this example          visit(tree, "link", (link: Link) => {            return {              type: "paragraph"              children: [{ type: 'text', value: link.title }]            }          })        }      }]    }  }}
 ```
 
@@ -69,7 +69,7 @@ A parting word: transformer plugins are quite complex so don’t worry if you do
 
 Filters **filter** content, taking the output of all the transformers and determining what files to actually keep and what to discard.
 
-```
+```plaintext
 export type QuartzFilterPlugin<Options extends OptionType = undefined> = (  opts?: Options,) => QuartzFilterPluginInstance export type QuartzFilterPluginInstance = {  name: string  shouldPublish(ctx: BuildCtx, content: ProcessedContent): boolean}
 ```
 
@@ -79,7 +79,7 @@ For example, here is the built-in plugin for removing drafts:
 
 quartz/plugins/filters/draft.ts
 
-```
+```plaintext
 import { QuartzFilterPlugin } from "../types" export const RemoveDrafts: QuartzFilterPlugin<{}> = () => ({  name: "RemoveDrafts",  shouldPublish(_ctx, [_tree, vfile]) {    // uses frontmatter parsed from transformers    const draftFlag: boolean = vfile.data?.frontmatter?.draft ?? false    return !draftFlag  },})
 ```
 
@@ -87,7 +87,7 @@ import { QuartzFilterPlugin } from "../types" export const RemoveDrafts: QuartzF
 
 Emitters **reduce** over content, taking in a list of all the transformed and filtered content and creating output files.
 
-```
+```plaintext
 export type QuartzEmitterPlugin<Options extends OptionType = undefined> = (  opts?: Options,) => QuartzEmitterPluginInstance export type QuartzEmitterPluginInstance = {  name: string  emit(ctx: BuildCtx, content: ProcessedContent[], resources: StaticResources): Promise<FilePath[]>  getQuartzComponents(ctx: BuildCtx): QuartzComponent[]}
 ```
 
@@ -95,7 +95,7 @@ An emitter plugin must define a `name` field, an `emit` function, and a `getQuar
 
 Creating new files can be done via regular Node [**fs module**](https://nodejs.org/api/fs.html) (i.e. `fs.cp` or `fs.writeFile`) or via the `write`function in `quartz/plugins/emitters/helpers.ts` if you are creating files that contain text. `write` has the following signature:
 
-```
+```plaintext
 export type WriteOptions = (data: {  // the build context  ctx: BuildCtx  // the name of the file to emit (not including the file extension)  slug: ServerSlug  // the file extension  ext: `.${string}` | ""  // the file content to add  content: string}) => Promise<FilePath>
 ```
 
@@ -111,7 +111,7 @@ For example, the following is a simplified version of the content page plugin th
 
 quartz/plugins/emitters/contentPage.tsx
 
-```
+```plaintext
 export const ContentPage: QuartzEmitterPlugin = () => {  // construct the layout  const layout: FullPageLayout = {    ...sharedPageComponents,    ...defaultContentPageLayout,    pageBody: Content(),  }  const { head, header, beforeBody, pageBody, afterBody, left, right, footer } = layout  return {    name: "ContentPage",    getQuartzComponents() {      return [head, ...header, ...beforeBody, pageBody, ...afterBody, ...left, ...right, footer]    },    async emit(ctx, content, resources, emit): Promise<FilePath[]> {      const cfg = ctx.cfg.configuration      const fps: FilePath[] = []      const allFiles = content.map((c) => c[1].data)      for (const [tree, file] of content) {        const slug = canonicalizeServer(file.data.slug!)        const externalResources = pageResources(slug, resources)        const componentData: QuartzComponentProps = {          fileData: file.data,          externalResources,          cfg,          children: [],          tree,          allFiles,        }         const content = renderPage(cfg, slug, componentData, opts, externalResources)        const fp = await emit({          content,          slug: file.data.slug!,          ext: ".html",        })         fps.push(fp)      }      return fps    },  }}
 ```
 
