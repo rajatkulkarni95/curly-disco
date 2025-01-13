@@ -1,8 +1,10 @@
----
-title: My Document
+---\
+title: My Document\
+author: John Doe\
+date: 2025-01-13\
 tags:
-  - test
-  - example
----
 
-asd
+- notes
+- documentation
+
+---
