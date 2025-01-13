@@ -28,7 +28,7 @@ The following sections will go into detail for what methods can be implemented f
 
 Transformers **map** over content, taking a Markdown file and outputting modified content or adding metadata to the file itself.
 
-```plaintext
+```typescript
 export type QuartzTransformerPluginInstance = {  name: string  textTransform?: (ctx: BuildCtx, src: string | Buffer) => string | Buffer  markdownPlugins?: (ctx: BuildCtx) => PluggableList  htmlPlugins?: (ctx: BuildCtx) => PluggableList  externalResources?: (ctx: BuildCtx) => Partial<StaticResources>}
 ```
 
