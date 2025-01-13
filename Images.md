@@ -1,3 +1,7 @@
-![Screenshot 2023-07-20 at 1.19.45 PM (1).png](asset://localhost/%2FUsers%2Frajatkulkarni%2FDocuments%2FDev%20Logs%2F.attachments%2FScreenshot%202023-07-20%20at%201.19.45%20PM%20\(1\).png)
+[[Screenshot 2023-07-20 at 1.19.45 PM (1).png]]
 
-Sodas [[Highlight File in Folder]] asdasdasdasd
+Sodas  [[Highlight File in Folder]]  asdasdasdasd [[Command]]
+
+[[Screenshot 2023-07-31 at 10.01.32 PM.png]]
+
+[[Screen Recording 2023-07-24 at 12.12.57 AM.mov]][[iPhone intro.pdf]] [[2024-11-30.pdf]][[Animals (74).pdf]] 

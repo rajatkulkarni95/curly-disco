@@ -21,7 +21,7 @@ const debounceChanges = useDebounce(function(editor) {
 
 Then save after a user pauses for more than 7 seconds, this is how I use the `useDebounce` hook to do that...
 
-```plaintext
+```javascript
 // debounce save after no activity in editor
 const debounceSave = useDebounce(function() {
   handleSave();
