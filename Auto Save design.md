@@ -30,7 +30,7 @@ const debounceSave = useDebounce(function() {
 
 And if they don't take a pause, (e.g. they are continuously typing for more than a minute), I'll also autosave with the `useAutosave` hook...
 
-```plaintext
+```javascript
 useAutosave(() => {
   // run save if changes and not already saving
   if (isChanges && !isSaving) {
