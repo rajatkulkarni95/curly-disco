@@ -10,7 +10,7 @@ Quartz’s plugins are a series of transformations over content. This is illustr
 
 All plugins are defined as a function that takes in a single parameter for options `type OptionType = object | undefined` and return an object that corresponds to the type of plugin it is.
 
-```plaintext
+```typescript
 type OptionType = object | undefinedtype QuartzPlugin<Options extends OptionType = undefined> = (opts?: Options) => QuartzPluginInstancetype QuartzPluginInstance =  | QuartzTransformerPluginInstance  | QuartzFilterPluginInstance  | QuartzEmitterPluginInstance
 ```
 
