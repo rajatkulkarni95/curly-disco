@@ -1,4 +1,9 @@
-```
+---
+external_files: []
+
+---
+
+```plaintext
 Workspaces: {
     [uuid]: {
       Wikilinks: {
@@ -40,7 +45,7 @@ Workspaces: {
 
 - [ ] Adding a file with a long name or a long path, expands the Meta (it should remain static)
 
-- [ ] Deleting a duplicated file with \[\[wikilinks\]\] causes blank values in meta.
+- [ ] Deleting a duplicated file with [[wikilinks]] causes blank values in meta.
 
 **Fast Follows:**
 

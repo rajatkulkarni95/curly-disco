@@ -1,7 +1,7 @@
 
 **Highlights of the day**
 
-- x
+- x 
 
 **Things I’m grateful**
 

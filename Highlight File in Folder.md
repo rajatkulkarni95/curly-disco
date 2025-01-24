@@ -1,10 +1,9 @@
----\
-title: My Document\
-author: John Doe\
-date: 2025-01-13\
-tags:
-
-- notes
-- documentation
-
 ---
+external_files:
+  - Animals (74).pdf
+  - New one.json
+---
+
+[Very Coll] qfqfw how about
+
+Now this is who [[Welcome]]

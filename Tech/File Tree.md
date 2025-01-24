@@ -1,3 +1,10 @@
+---
+external_files:
+  - notedddd.txt
+  - Ask Assistant-4.html
+
+---
+
 Currently the structure of files can be an infinitely nested tree struct
 
 ---
