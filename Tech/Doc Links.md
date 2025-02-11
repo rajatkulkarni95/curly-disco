@@ -17,13 +17,13 @@ Workspaces: {
 
 - [x] Remove FileName from the wikilinks structure (since renames and stuff don’t work)
 
-- [x] Run an `update` on every save after a timeout (for deletions)
+- [x] Run an update on every save after a timeout (for deletions)
 
 - [x] Truncate the name of the file for 300px.
 
 - [x] When deleting file, remove their linked/backlinked stats
 
-- [x] Check #for links (if from outside the app) when loading a new page
+Check #for links (if from outside the app) when loading a new page
 
 - [x] Allow linking `Daily Desk` (cuid could be `formattedDate` )
 
@@ -56,3 +56,5 @@ Workspaces: {
 - [ ] Wikilinks command doesn’t show up if the previous text was a wikiink
 
 - [ ] When the app is at is smallest width, opening both sidebars causes the meta to go out of bounds with no way to access
+
+Hello #please  `there` #asd  #okay
