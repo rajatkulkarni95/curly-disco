@@ -23,7 +23,7 @@ Workspaces: {
 
 - [x] When deleting file, remove their linked/backlinked stats
 
-- [x] Check for links (if from outside the app) when loading a new page
+- [x] Check #for links (if from outside the app) when loading a new page
 
 - [x] Allow linking `Daily Desk` (cuid could be `formattedDate` )
 

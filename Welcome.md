@@ -10,17 +10,17 @@ external_files:
 
 **Welcome to Octarine :)**
 
-Is this the 1857345th Note Editing app out there? Maybe? Would I be making promises, that this one is *different*? Haven’t you heard that before?
+Is this the 1857345th Note Editing #app out there? Maybe? Would I be making promises, that this one is *different*? Haven’t you heard that before?
 
-Octarine is a lot of things, `fundamentally new` is not one of them, and you know what - **That’s fine**!
+Octarine is a lot of things, `fundamentally new` is not one of them, and you #know what - **That’s fine**!
 
-It does all the usual things that you’d expect from a note taker, but takes a few workflows that seemed to work with me, and gives it a try.
+It does all the usual things that you’d expect from a #note taker, but takes a few workflows that seemed to work with me, and gives it a try.
 
 - **Private and Local by Default**
 
-  - No **vendor lock-in**. All notes are stored locally on your disk, in `Markdown` format, so if you ever feel like Octarine isn’t the one (we hope you don’t), you’d not be losing your notes, and you can just take them to the next lovely app out there!
+  - No **vendor lock-in**. All notes are stored locally on your disk, in `Markdown` format, so if you ever feel like  Octarine isn’t the one (we hope you don’t), you’d not be losing your notes, and you can just take them to the next lovely app out there!
 
-  - Nothing touches our servers. Your notes live in your disk, only for your eyes.
+  - Nothing touches our servers.  Your notes live in your disk, only for your eyes.
 
     [[Screen Recording 2023-07-31 at 9.58.01 PM.mov]]
 
