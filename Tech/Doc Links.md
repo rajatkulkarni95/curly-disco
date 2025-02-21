@@ -17,21 +17,21 @@ Workspaces: {
 
 - [x] Remove FileName from the wikilinks structure (since renames and stuff don’t work)
 
-- [x] Run an update on every save after a timeout (for deletions)
+- [x] Run an update on every save after a timeout (fors deletions)
 
 - [x] Truncate the name of the file for 300px.
 
 - [x] When deleting file, remove their linked/backlinked stats
 
-Check #for links (if from outside the app) when loading a new page
+- [x] Check #fr  links (if from outside the app) when loading a new page
 
-- [x] Allow linking `Daily Desk` (cuid could be `formattedDate` )
+- [x] Allow linking `D#okay aily Desk` (cuid could be `formattedDate` )
 
 - [x] Shortcut for Meta
 
 - [x] Wikilink in `/` command
 
-- [x] Figure out scrolls for the meta tag
+- [x] Figure out scrolls #for the meta tag
 
 - [x] Figure out colors between themes for the doc links
 
@@ -57,4 +57,4 @@ Check #for links (if from outside the app) when loading a new page
 
 - [ ] When the app is at is smallest width, opening both sidebars causes the meta to go out of bounds with no way to access
 
-Hello #please  `there` #asd  #okay
+Hello #please `there` #asdy

@@ -1,3 +1,8 @@
+---
+locked: false
+
+---
+
 [[Screenshot 2023-07-20 at 1.19.45 PM (1).png]]
 
 Sodas  [[Highlight File in Folder]]  asdasdasdasd [[Command]]
