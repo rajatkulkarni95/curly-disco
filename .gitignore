@@ -1,3 +1,5 @@
 /.attachments
 .DS_Store
 node_modules
+/.files
+/.templates

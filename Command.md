@@ -5,7 +5,7 @@
 >
 > This part of the documentation will assume you have working knowledge in TypeScript and will include code snippets that describe the interface of what Quartz plugins should look like.
 
-Quartz’s plugins are a series of transformations over content. This is illustrated in the diagram of the processing pipeline below:
+Quartz’s plugins are a series of transformations over content. This is illustrated in the diagram of the processing pipeline below: changes
 
 ![](https://quartz.jzhao.xyz/images/quartz-transform-pipeline.png)
 
