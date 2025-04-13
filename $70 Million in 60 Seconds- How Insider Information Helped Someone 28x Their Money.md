@@ -1,7 +1,3 @@
----
-pinned: true
-
----
 
 On April 9, 2025, someone risked about $2.5 million—and walked away with more than $70 million in under an hour.
 
@@ -11,7 +7,7 @@ These are known as zero-day expiry options. They’re cheap because they’re ri
 
 In this case, the timing was perfect. The trade was placed just before 1:01 pm Eastern Time. At 1:30 pm, Donald Trump posted on Truth Social that he was pausing most of the tariffs he had imposed earlier that month. The market exploded upward. SPY surged well past the 509 mark. Those options that had cost just 85 cents were suddenly worth more than $25.
 
-![](https://data-and-politics.ghost.io/content/images/2025/04/Screenshot-2025-04-11-at-20.55.36.png)
+![](https://www.dataandpolitics.net/content/images/2025/04/Screenshot-2025-04-11-at-20.55.36.png)
 
 Notice the spike in trade at 17:00 GMT.
 
@@ -27,9 +23,9 @@ If the trades hadn’t worked out, the losses would have been swift and total. Z
 
 I checked comparable moments in market history: emergency rate cuts in 2008, the first quantitative easing program in 2009. These were true market shocks. But in those cases, SPY volume was flat before the announcements. The price didn’t move until after the news hit the wire. No sign of early bets. No one placing $2 million chips on the right number just minutes before the roulette wheel stopped.
 
-![](https://data-and-politics.ghost.io/content/images/2025/04/Screenshot-2025-04-09-at-21.15.58.png)
+![](https://www.dataandpolitics.net/content/images/2025/04/Screenshot-2025-04-09-at-21.15.58.png)
 
-![](https://data-and-politics.ghost.io/content/images/2025/04/Screenshot-2025-04-09-at-21.16.07.png)
+![](https://www.dataandpolitics.net/content/images/2025/04/Screenshot-2025-04-09-at-21.16.07.png)
 
 This time was different. April 9 shows all the hallmarks of pre-positioning—where a trader takes a major position just before a known catalyst. Sometimes it’s just a hunch. Sometimes it’s a coincidence. And sometimes it’s something else entirely.
 
@@ -37,16 +33,4 @@ We don’t know who placed the trades. We don’t know what they knew. But we do
 
 ---
 
-## Main Takeaways
-
-- **Significant Profit from High-Risk Trade**: On April 9, 2025, a trader risked $2.5 million on a zero-day expiry option for SPY and realized over $70 million in under an hour after a market-moving announcement from Donald Trump.
-
-- **Nature of Zero-Day Options**: These options are risky and inexpensive due to their short timeframe; if the market doesn’t move favorably, they can expire worthless.
-
-- **Preceding Market Movement**: The options purchase and subsequent market increase occurred just before the announcement, indicating potential foreknowledge or insider information, as high trading volumes were recorded prior to the news.
-
-- **Significant Volume and Timing**: Approximately 30,000 contracts were traded, leading to substantial profits, with heightened trading activity seen just one minute after the bearish tariff news.
-
-- **Comparison With Past Events**: Unlike similar historical market shocks where trading was relatively flat before announcements, this trading behavior indicated pre-positioning, suggesting that the trader acted on privileged information.
-
-- **Speculation on Information Source**: While the identity of the trader remains unknown, the precision of the timing raises questions about whether they had advanced knowledge of the pending news.
+**TL;DR:** On April 9, 2025, a trader risked $2.5 million on zero-day options for SPY, betting on a surge in price as Trump announced a pause on tariffs. The strategy paid off, netting over $70 million as SPY surged past $509. This trade, among others, suggested advanced knowledge of market movements, raising questions about insider information. The precision and timing of trades indicated a pre-positioning strategy, with substantial profits realized just before the news became public.
