@@ -1,3 +1,7 @@
+---
+pinned: true
+
+---
 
 On April 9, 2025, someone risked about $2.5 million—and walked away with more than $70 million in under an hour.
 
