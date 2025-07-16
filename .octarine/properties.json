@@ -1,0 +1,36 @@
+{
+  "status": {
+    "type": "select",
+    "options": [
+      "draft",
+      "in_progress",
+      "review",
+      "completed"
+    ],
+    "description": "Current status of the note",
+    "default": "draft"
+  },
+  "priority": {
+    "type": "select",
+    "options": [
+      "low",
+      "medium",
+      "high",
+      "urgent"
+    ],
+    "description": "Priority level",
+    "default": "medium"
+  },
+  "author": {
+    "type": "text",
+    "description": "Author or creator of the note"
+  },
+  "tags": {
+    "type": "text",
+    "description": "Comma-separated tags"
+  },
+  "due_date": {
+    "type": "date",
+    "description": "Due date or deadline"
+  }
+}
