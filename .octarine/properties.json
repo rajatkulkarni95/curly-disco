@@ -1,36 +1,41 @@
 {
-  "status": {
-    "type": "select",
-    "options": [
-      "draft",
-      "in_progress",
-      "review",
-      "completed"
-    ],
-    "description": "Current status of the note",
-    "default": "draft"
+  "author": {
+    "description": "Author or creator of the note",
+    "type": "text"
+  },
+  "due_date": {
+    "description": "Due date or deadline",
+    "type": "date"
   },
   "priority": {
-    "type": "select",
+    "default": "medium",
+    "description": "Priority level",
     "options": [
       "low",
       "medium",
       "high",
       "urgent"
     ],
-    "description": "Priority level",
-    "default": "medium"
+    "type": "select"
   },
-  "author": {
-    "type": "text",
-    "description": "Author or creator of the note"
+  "status": {
+    "default": "draft",
+    "description": "Current status of the note",
+    "options": [
+      "draft",
+      "in_progress",
+      "review",
+      "completed"
+    ],
+    "type": "select"
   },
   "tags": {
-    "type": "text",
-    "description": "Comma-separated tags"
+    "description": "Comma-separated tags",
+    "type": "text"
   },
-  "due_date": {
-    "type": "date",
-    "description": "Due date or deadline"
+  "read?": {
+    "type": "boolean",
+    "required": false,
+    "description": "Auto-generated from frontmatter"
   }
 }
