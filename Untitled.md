@@ -17,3 +17,5 @@ pinned: false
 - **Comparison to Historical Events**: This event was atypical compared to previous market shocks where trading volumes were flat before announcements, suggesting the trader may have acted on insider information.
 
 - **Uncertainty and Speculation**: The identity of the trader and the source of their information is unknown, raising questions about whether the successful trade was based on speculation or inside knowledge.
+
+[[Checking]] 
