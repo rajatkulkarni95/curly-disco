@@ -1,5 +1,6 @@
 {
   "pinned": false,
   "icon": "GiftIcon",
-  "iconColor": "blue"
+  "iconColor": "blue",
+  "sort_method": "-file_name"
 }
