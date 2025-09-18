@@ -1,41 +1,7 @@
-{
-  "author": {
-    "description": "Author or creator of the note",
-    "type": "text"
-  },
-  "due_date": {
-    "description": "Due date or deadline",
-    "type": "date"
-  },
-  "priority": {
-    "default": "medium",
-    "description": "Priority level",
-    "options": [
-      "low",
-      "medium",
-      "high",
-      "urgent"
-    ],
-    "type": "select"
-  },
-  "status": {
-    "default": "draft",
-    "description": "Current status of the note",
-    "options": [
-      "draft",
-      "in_progress",
-      "review",
-      "completed"
-    ],
-    "type": "select"
-  },
-  "tags": {
-    "description": "Comma-separated tags",
-    "type": "text"
-  },
-  "read?": {
-    "type": "boolean",
-    "required": false,
-    "description": "Auto-generated from frontmatter"
+[
+  {
+    "name": "read?",
+    "type": "checkbox",
+    "options": null
   }
-}
+]
