@@ -43,5 +43,10 @@
     "name": "Author",
     "type": "string",
     "options": null
+  },
+  {
+    "name": "tags",
+    "type": "tags",
+    "options": null
   }
 ]
