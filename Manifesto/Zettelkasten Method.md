@@ -1,3 +1,9 @@
+---
+word_count: 350
+title: Zettelkasten Method
+created: 2023-06-26
+---
+
 ## Octarine - An offline writer :)
 
 *As deemed by ChatGPT,* some potential features of a note-taking app based on the Zettelkasten method.
@@ -24,4 +30,3 @@
 
 
 <!-- -->
-

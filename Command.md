@@ -1,3 +1,9 @@
+---
+word_count: 1667
+title: Command
+created: 2023-07-12
+---
+
 
 # Making your own plugins
 

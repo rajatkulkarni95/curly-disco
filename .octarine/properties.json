@@ -1,52 +1,22 @@
 [
   {
-    "name": "read?",
-    "type": "checkbox",
-    "options": null
-  },
-  {
-    "name": "Tags",
-    "type": "tags",
-    "options": null
-  },
-  {
-    "name": "Status",
-    "type": "list",
-    "options": [
-      "Draft",
-      "In Progress",
-      "Under Review",
-      "Published"
-    ]
-  },
-  {
-    "name": "Word Count",
+    "name": "word_count",
     "type": "number",
     "options": null
   },
   {
-    "name": "Due Date",
-    "type": "date",
-    "options": null
-  },
-  {
-    "name": "Last Edited",
-    "type": "datetime",
-    "options": null
-  },
-  {
-    "name": "Published",
-    "type": "checkbox",
-    "options": null
-  },
-  {
-    "name": "Author",
+    "name": "title",
     "type": "string",
     "options": null
   },
   {
-    "name": "tags",
-    "type": "tags",
+    "name": "created",
+    "type": "string",
+    "options": null
+  },
+  {
+    "name": "read?",
+    "type": "checkbox",
     "options": null
   }
 ]
