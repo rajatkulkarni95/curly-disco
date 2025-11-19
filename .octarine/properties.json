@@ -58,5 +58,10 @@
     "name": "Author",
     "type": "string",
     "options": null
+  },
+  {
+    "name": "external_files",
+    "type": "tags",
+    "options": null
   }
 ]
