@@ -1,9 +1,3 @@
----
-word_count: 22
-title: Daily Standup
-created: 2023-10-01
----
-
 
 **What did you do today?**
 

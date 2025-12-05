@@ -1,0 +1,167 @@
+[
+  {
+    "id": "zn39zf8t7g7e4mqq313fa0w5",
+    "name": "Organised Notes",
+    "description": "All notes in your workspace",
+    "icon": "DocumentTextIcon",
+    "color": "blue",
+    "order": 0,
+    "filters": [
+      {
+        "id": "wrgoqknip6d5jl952i31j6tq",
+        "field": "oct.note_location",
+        "operator": "in",
+        "value": [
+          "Notes"
+        ],
+        "combinator": null,
+        "nested": null
+      }
+    ],
+    "columns": [
+      {
+        "field": "oct.name",
+        "type": "file",
+        "order": 0
+      },
+      {
+        "field": "oct.note_location",
+        "type": "list",
+        "order": 1
+      },
+      {
+        "field": "oct.created_date",
+        "type": "date",
+        "order": 2
+      },
+      {
+        "field": "oct.modified_date",
+        "type": "date",
+        "order": 3
+      },
+      {
+        "field": "oct.tags",
+        "type": "tags",
+        "order": 4
+      },
+      {
+        "field": "oct.pinned",
+        "type": "boolean",
+        "order": 5
+      },
+      {
+        "field": "oct.locked",
+        "type": "boolean",
+        "order": 6
+      }
+    ],
+    "sort": [
+      {
+        "field": "oct.modified_date",
+        "direction": "desc",
+        "priority": null
+      }
+    ],
+    "groupBy": null,
+    "created": 1764913433622,
+    "modified": 1764913433710
+  },
+  {
+    "id": "qgx2qsfc5asapsavalyltlqd",
+    "name": "Pending Tasks",
+    "description": "Notes with tasks and to-dos",
+    "icon": "ClipboardDocumentCheckIcon",
+    "color": "yellow",
+    "order": 1,
+    "filters": [
+      {
+        "id": "yt90oy7aq462e3au3whirxd4",
+        "field": "oct.task_status",
+        "operator": "in",
+        "value": [
+          "Pending",
+          "Complete"
+        ],
+        "combinator": null,
+        "nested": null
+      }
+    ],
+    "columns": [
+      {
+        "field": "oct.name",
+        "type": "file",
+        "order": 0
+      },
+      {
+        "field": "oct.tasks",
+        "type": "tasks",
+        "order": 2
+      },
+      {
+        "field": "oct.modified_date",
+        "type": "date",
+        "order": 3
+      }
+    ],
+    "sort": [
+      {
+        "field": "oct.task_status",
+        "direction": "asc",
+        "priority": null
+      }
+    ],
+    "groupBy": null,
+    "created": 1764913433911,
+    "modified": 1764913433970
+  },
+  {
+    "id": "n97cre6qzu65pzjatjz1gl9n",
+    "name": "Recently Written",
+    "description": "Recently modified",
+    "icon": "ClockIcon",
+    "color": "purple",
+    "order": 2,
+    "filters": [
+      {
+        "id": "fbza4hxeibgatk8kkkitzwlj",
+        "field": "oct.modified_date",
+        "operator": "on",
+        "value": "last_7_days",
+        "combinator": null,
+        "nested": null
+      }
+    ],
+    "columns": [
+      {
+        "field": "oct.name",
+        "type": "file",
+        "order": 0
+      },
+      {
+        "field": "oct.note_location",
+        "type": "list",
+        "order": 1
+      },
+      {
+        "field": "oct.modified_date",
+        "type": "date",
+        "order": 2
+      },
+      {
+        "field": "oct.linked_notes",
+        "type": "list",
+        "order": 3
+      }
+    ],
+    "sort": [
+      {
+        "field": "oct.modified_date",
+        "direction": "desc",
+        "priority": null
+      }
+    ],
+    "groupBy": null,
+    "created": 1764913434003,
+    "modified": 1764913434010
+  }
+]
