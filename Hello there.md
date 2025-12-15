@@ -6,6 +6,8 @@ Due Date: '2025-12-04'
 
 
 
+
+
 Hi, yeah **sure** - I'm using ReactJS, and I handle auto saving in two ways...
 
 I created a debounce hook (that I wrote about here <https://www.codemzy.com/blog/reactjs-debounce-hook>) so I can control how often functions run, and also an autosave hook (that I wrote about here <https://www.codemzy.com/blog/autosave-reactjs-with-setinterval>) to run a function (like saving) on an interval. I use both these hooks for autosaving.
