@@ -1,8 +1,12 @@
 ---
-tags: []
+tags:
+  - know
 locked: false
+read?: true
 
 ---
+
+
 
 
 

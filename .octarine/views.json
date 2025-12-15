@@ -8,13 +8,13 @@
     "order": 0,
     "filters": [
       {
-        "id": "wrgoqknip6d5jl952i31j6tq",
-        "field": "oct.note_location",
+        "id": "zi73ydnju11jvqpgfumy02ty",
+        "field": "oct.linked_notes",
         "operator": "in",
         "value": [
-          "Notes"
+          "Command.md"
         ],
-        "combinator": null,
+        "combinator": "AND",
         "nested": null
       }
     ],
@@ -25,39 +25,24 @@
         "order": 0
       },
       {
-        "field": "oct.note_location",
-        "type": "list",
-        "order": 1
-      },
-      {
         "field": "oct.created_date",
         "type": "date",
         "order": 2
       },
       {
-        "field": "oct.modified_date",
-        "type": "date",
+        "field": "oct.linked_notes",
+        "type": "list",
         "order": 3
       },
       {
-        "field": "oct.tags",
-        "type": "tags",
+        "field": "oct.linked_media",
+        "type": "list",
         "order": 4
       },
       {
-        "field": "oct.pinned",
-        "type": "boolean",
+        "field": "oct.linked_files",
+        "type": "list",
         "order": 5
-      },
-      {
-        "field": "oct.locked",
-        "type": "boolean",
-        "order": 6
-      },
-      {
-        "field": "oct.path",
-        "type": "string",
-        "order": 7
       }
     ],
     "sort": [
@@ -69,7 +54,7 @@
     ],
     "groupBy": null,
     "created": 1764913433622,
-    "modified": 1765779257180
+    "modified": 1765781215499
   },
   {
     "id": "qgx2qsfc5asapsavalyltlqd",
