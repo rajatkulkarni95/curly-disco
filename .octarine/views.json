@@ -53,6 +53,11 @@
         "field": "oct.locked",
         "type": "boolean",
         "order": 6
+      },
+      {
+        "field": "oct.path",
+        "type": "string",
+        "order": 7
       }
     ],
     "sort": [
@@ -64,7 +69,7 @@
     ],
     "groupBy": null,
     "created": 1764913433622,
-    "modified": 1764913433710
+    "modified": 1765779257180
   },
   {
     "id": "qgx2qsfc5asapsavalyltlqd",
