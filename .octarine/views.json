@@ -5,7 +5,7 @@
     "description": "All notes in your workspace",
     "icon": "DocumentTextIcon",
     "color": "blue",
-    "order": 0,
+    "order": 2,
     "filters": [
       {
         "id": "zi73ydnju11jvqpgfumy02ty",
@@ -54,7 +54,7 @@
     ],
     "groupBy": null,
     "created": 1764913433622,
-    "modified": 1765781215499
+    "modified": 1765797273340
   },
   {
     "id": "qgx2qsfc5asapsavalyltlqd",
@@ -102,7 +102,7 @@
     ],
     "groupBy": null,
     "created": 1764913433911,
-    "modified": 1764913433970
+    "modified": 1765797273332
   },
   {
     "id": "n97cre6qzu65pzjatjz1gl9n",
@@ -110,7 +110,7 @@
     "description": "Recently modified",
     "icon": "ClockIcon",
     "color": "purple",
-    "order": 2,
+    "order": 0,
     "filters": [
       {
         "id": "fbza4hxeibgatk8kkkitzwlj",
@@ -152,7 +152,7 @@
     ],
     "groupBy": null,
     "created": 1764913434003,
-    "modified": 1764913434010
+    "modified": 1765797273306
   },
   {
     "id": "x9ze181y3n38p9vh5fft0jlv",
@@ -206,6 +206,6 @@
     "sort": null,
     "groupBy": null,
     "created": 1765784861580,
-    "modified": 1765794412029
+    "modified": 1765797273348
   }
 ]
