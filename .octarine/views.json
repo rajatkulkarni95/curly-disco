@@ -153,5 +153,55 @@
     "groupBy": null,
     "created": 1764913434003,
     "modified": 1764913434010
+  },
+  {
+    "id": "x9ze181y3n38p9vh5fft0jlv",
+    "name": "Focused Horizon",
+    "description": "",
+    "icon": "MagnifyingGlassIcon",
+    "color": "green",
+    "order": 3,
+    "filters": [
+      {
+        "id": "tz3uo7k05njlogpt58p6e3w6",
+        "field": "oct.modified_date",
+        "operator": "on",
+        "value": "last_7_days",
+        "combinator": "AND",
+        "nested": null
+      },
+      {
+        "id": "o06rwxodz53snvsttzdm6f79",
+        "field": "oct.task_status",
+        "operator": "in",
+        "value": [
+          "Pending"
+        ],
+        "combinator": "AND",
+        "nested": null
+      }
+    ],
+    "columns": [
+      {
+        "field": "oct.name",
+        "order": 0
+      },
+      {
+        "field": "oct.modified_date",
+        "order": 1
+      },
+      {
+        "field": "oct.created_date",
+        "order": 3
+      },
+      {
+        "field": "oct.tasks",
+        "order": 4
+      }
+    ],
+    "sort": null,
+    "groupBy": null,
+    "created": 1765784861580,
+    "modified": 1765794196459
   }
 ]
