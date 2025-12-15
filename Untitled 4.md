@@ -1,3 +1,9 @@
+---
+tags:
+  - note
+
+---
+
 
 
 Testin templ
