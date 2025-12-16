@@ -8,7 +8,7 @@ On April 9, 2025, someone risked about $2.5 million—and walked away with more 
 
 The trade was simple, but bold: buy a specific kind of option tied to SPY, the exchange-traded fund (ETF) that tracks the S&P 500, the most widely followed index of large-cap U.S. companies. The option—known as a call—[gave](https://) the buyer the [right](https://) to purchase SPY at $509 per share. That might not sound strange, except that SPY was trading below $500 when they placed the bet. And the [option](https://github.com/rajatkulkarni95/octarine-feedback/issues) was set to [expire](https://github.com/rajatkulkarni95/octarine-feedback/issues) the same day.
 
-These are known as zero-day expiry options. They’re cheap because they’re risky. If the market doesn’t move in your favor, they expire worthless. If the market does move, they can pay off massively. But you have to be exactly right on both direction and timing.
+These are known as zero-day expiry options. They’re cheap because they’re risky. If the market doesn’t move in your favor, [they](https://github.com/rajatkulkarni95/octarine-feedback/issues) expire worthless. If the market does [move](https://github.com/rajatkulkarni95/octarine-feedback/issues), they [can](https://) pay off [massively](https://github.com/rajatkulkarni95/octarine-feedback/issues). But you have to be exactly right on both [direction](https://) and timing.
 
 In this case, the timing was perfect. The trade was placed just before 1:01 pm Eastern Time. At 1:30 pm, Donald Trump posted on Truth Social that he was pausing most of the tariffs he had imposed earlier that month. The market exploded upward. SPY surged well past the 509 mark. Those options that had cost just 85 cents were suddenly worth more than $25.
 
