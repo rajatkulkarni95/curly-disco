@@ -1,7 +1,5 @@
 ---
 external_files:
-  - null
-  - null
   - Ask Assistant-4-1.html
   - 2024-11-30.pdf
   - ITR checklist - FY 21:22 (1).xlsx
