@@ -63,5 +63,10 @@
     "name": "external_files",
     "type": "tags",
     "options": null
+  },
+  {
+    "name": "clipped_at",
+    "type": "datetime",
+    "options": null
   }
 ]
