@@ -38,7 +38,17 @@
     {
       "id": "add-informal-tone",
       "name": "Add Informal Tone",
-      "prompt": "Rewrite the following text to add an informal tone."
+      "prompt": "moRewrite the following text to add an f tone.ralkasd"
+    },
+    {
+      "id": "42f5c084-ea0b-40a5-971e-46822cdd45d9",
+      "name": "Actionable",
+      "prompt": "Convert this text into an actionable task list. Break down any ideas, goals, or concepts into specific, concrete next steps. For each task, include: what needs to be done, any dependencies, estimated time, and priority level (high/medium/low). Format as tasks."
+    },
+    {
+      "id": "5dfcea1f-ea6b-42af-972a-ffead7dce780",
+      "name": "Linkedin",
+      "prompt": "Convert this piece of text into a LinkedIn post"
     }
   ]
 }

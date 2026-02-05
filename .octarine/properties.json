@@ -68,5 +68,15 @@
     "name": "clipped_at",
     "type": "datetime",
     "options": null
+  },
+  {
+    "name": "source",
+    "type": "string",
+    "options": null
+  },
+  {
+    "name": "published",
+    "type": "date",
+    "options": null
   }
 ]
